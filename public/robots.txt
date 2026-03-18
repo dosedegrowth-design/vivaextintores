@@ -1,0 +1,21 @@
+# Viva Extintores - Robots.txt
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+
+# Sitemap
+Sitemap: https://vivaextintores.com.br/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 10
+
+# Popular Bots
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Bingbot
+Allow: /
