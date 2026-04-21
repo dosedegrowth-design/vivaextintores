@@ -1,5 +1,5 @@
-# Viva Extintores — https://vivaextintores.com.br
-# Atualizado: 2026-04-20
+# Viva Extintores — https://www.vivaextintores.com.br
+# Atualizado: 2026-04-21
 
 User-agent: *
 Allow: /
@@ -8,7 +8,7 @@ Disallow: /api/
 Disallow: /*.json$
 
 # Sitemap
-Sitemap: https://vivaextintores.com.br/sitemap.xml
+Sitemap: https://www.vivaextintores.com.br/sitemap.xml
 
 # Crawlers principais
 User-agent: Googlebot
