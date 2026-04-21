@@ -1,21 +1,47 @@
-# Viva Extintores - Robots.txt
+# Viva Extintores — https://vivaextintores.com.br
+# Atualizado: 2026-04-20
+
 User-agent: *
 Allow: /
 Disallow: /admin/
 Disallow: /api/
+Disallow: /*.json$
 
 # Sitemap
 Sitemap: https://vivaextintores.com.br/sitemap.xml
 
-# Crawl-delay
-Crawl-delay: 10
-
-# Popular Bots
+# Crawlers principais
 User-agent: Googlebot
 Allow: /
+Crawl-delay: 0
 
 User-agent: Googlebot-Image
-Allow: /
+Allow: /Fotos/
+Allow: /obras/
+Allow: /logos/
 
 User-agent: Bingbot
 Allow: /
+Crawl-delay: 1
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+# Bloquear crawlers abusivos
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /

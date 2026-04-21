@@ -2015,3 +2015,470 @@ h4 { font-size: 1.125rem; }
     scroll-behavior: auto !important;
   }
 }
+
+/* ============================================================
+   MOBILE REFINEMENTS v2.1
+   Polimento mobile final: discre\u00e7\u00e3o, centraliza\u00e7\u00e3o, spacing
+   ============================================================ */
+
+@media (max-width: 768px) {
+
+  /* ---- Container: m\u00e1s padding lateral confort\u00e1vel ---- */
+  .container {
+    padding: 0 16px;
+  }
+
+  /* ---- Promo Bar: menor, mais discreto ---- */
+  .promo-bar {
+    padding: 8px 0;
+  }
+  .promo-bar p {
+    font-size: 12px;
+    gap: 6px;
+    line-height: 1.3;
+    text-align: center;
+  }
+  .promo-main {
+    font-size: 12px;
+  }
+  .promo-detail {
+    font-size: 11px;
+    display: block;
+    width: 100%;
+  }
+
+  /* ---- Header: mais compacto ---- */
+  .main-header {
+    padding: 12px 0;
+    top: 36px;
+  }
+  .logo img {
+    height: 36px;
+  }
+  .mobile-menu-btn {
+    padding: 6px;
+  }
+
+  .mobile-nav {
+    padding: 16px;
+    gap: 4px;
+  }
+  .mobile-nav a {
+    padding: 14px 16px;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  /* ---- Hero: centraliza tudo, spacing melhor ---- */
+  .hero {
+    padding: 32px 0 40px;
+  }
+  .hero-split-grid {
+    gap: 32px;
+  }
+  .hero-content {
+    text-align: center;
+  }
+  .hero-content h1 {
+    font-size: 30px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+  }
+  .hero-tagline {
+    font-size: 15px;
+    margin-bottom: 12px;
+  }
+  .hero-desc {
+    font-size: 15px;
+    line-height: 1.55;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+  }
+  .hero-badges {
+    justify-content: center;
+    gap: 6px;
+    margin-bottom: 20px;
+  }
+  .badge-trust, .badge-urgency {
+    padding: 5px 10px;
+    font-size: 11px;
+  }
+  .hero-social-proof {
+    justify-content: center;
+    flex-direction: column;
+    gap: 6px;
+    text-align: center;
+  }
+  .social-proof-text {
+    font-size: 13px;
+  }
+  .urgency-text {
+    text-align: center;
+    font-size: 13px;
+  }
+
+  /* ---- Hero Form: bordas mais suaves, spacing melhor ---- */
+  .hero-form-card {
+    padding: 24px 20px;
+    border-radius: 16px;
+  }
+  .hero-form-header h3 {
+    font-size: 22px;
+  }
+  .hero-form-header p {
+    font-size: 14px;
+  }
+  .hero-form-badge {
+    font-size: 12px;
+    padding: 5px 12px;
+  }
+  .hero-form {
+    gap: 12px;
+  }
+  .form-group input,
+  .form-group select {
+    padding: 14px 14px; /* maior touch target */
+    font-size: 16px; /* evita zoom no iOS */
+  }
+
+  /* ---- Bot\u00f5es: padding touch-friendly, menor ---- */
+  .btn {
+    padding: 14px 22px;
+    font-size: 14px;
+    border-radius: 10px;
+  }
+  .btn-xl {
+    padding: 16px 24px;
+    font-size: 15px;
+  }
+  .btn-lg {
+    padding: 14px 22px;
+    font-size: 14px;
+  }
+  .btn-sm {
+    padding: 10px 16px;
+    font-size: 13px;
+  }
+
+  /* ---- Section titles: centralizado + spacing ---- */
+  .section-title {
+    margin-bottom: 32px;
+  }
+  .section-title h2 {
+    font-size: 26px;
+    margin-bottom: 12px;
+  }
+  .section-title p {
+    font-size: 15px !important;
+    line-height: 1.55;
+  }
+  .overtitle {
+    font-size: 11px;
+    letter-spacing: 1.5px;
+  }
+
+  /* ---- Client Carousel: menor ---- */
+  .client-carousel {
+    padding: 28px 0;
+  }
+  .carousel-title p {
+    font-size: 11px;
+  }
+  .carousel-track {
+    gap: 32px;
+  }
+  .carousel-item {
+    height: 40px;
+  }
+  .carousel-item img {
+    max-height: 36px;
+  }
+
+  /* ---- Stats: compacto ---- */
+  .stats {
+    padding: 40px 0;
+  }
+  .stats-grid {
+    gap: 16px;
+  }
+  .stat-item {
+    padding: 8px;
+  }
+  .stat-val {
+    font-size: 32px;
+  }
+  .stat-label {
+    font-size: 11px;
+    letter-spacing: 0.3px;
+  }
+
+  /* ---- Laudos grid: spacing + padding menor ---- */
+  .services {
+    padding: 48px 0;
+  }
+  .laudo-card {
+    padding: 20px 18px;
+    border-radius: 14px;
+  }
+  .laudo-card-head h3 {
+    font-size: 18px;
+  }
+  .laudo-card-desc {
+    font-size: 14px;
+  }
+  .laudo-card-meta {
+    gap: 12px;
+    padding: 10px 12px;
+  }
+  .meta-value {
+    font-size: 13px;
+  }
+  .meta-label {
+    font-size: 10px;
+  }
+
+  /* ---- Obras & Projetos: text centralizado ---- */
+  .fire-safety {
+    padding: 48px 0;
+  }
+  .fire-text {
+    text-align: center;
+  }
+  .fire-text .title-divider {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fire-text p {
+    font-size: 15px;
+    text-align: left;
+  }
+  .check-list li {
+    text-align: left;
+  }
+  .fire-text > a.btn {
+    width: 100%;
+    max-width: 320px;
+  }
+  .obras-carousel-container {
+    aspect-ratio: 4/3;
+  }
+  .obras-badge {
+    font-size: 10px;
+    padding: 6px 10px;
+    top: 10px;
+    left: 10px;
+  }
+  .obras-carousel-arrow {
+    width: 36px;
+    height: 36px;
+  }
+
+  /* ---- Equipamentos: grid menor ---- */
+  .equipamentos-section {
+    padding: 44px 0;
+  }
+  .equipment-header h3 {
+    font-size: 22px;
+  }
+  .equipment-item {
+    padding: 16px;
+  }
+
+  /* ---- Business Types: cards mais compactos ---- */
+  .business-types {
+    padding: 48px 0;
+  }
+  .business-card {
+    padding: 22px 18px;
+    border-radius: 14px;
+  }
+  .business-card h3 {
+    font-size: 17px;
+  }
+  .business-list li {
+    font-size: 13px;
+    padding: 3px 0;
+  }
+
+  /* ---- Testimonials: padding menor ---- */
+  .testimonials-section {
+    padding: 48px 0;
+  }
+  .testimonial-card {
+    padding: 24px 20px;
+  }
+  .testimonial-text {
+    font-size: 14px;
+  }
+  .author-name {
+    font-size: 14px;
+  }
+  .author-company {
+    font-size: 12px;
+  }
+
+  /* ---- Steps: 2 colunas compactas ---- */
+  .steps {
+    padding: 48px 0;
+  }
+  .steps-row {
+    gap: 14px;
+  }
+  .step-card {
+    padding: 22px 16px;
+  }
+  .step-num {
+    font-size: 38px;
+  }
+  .step-card h4 {
+    font-size: 15px;
+  }
+  .step-card p {
+    font-size: 13px;
+  }
+
+  /* ---- Help Banner ---- */
+  .help-banner {
+    padding: 52px 0;
+  }
+  .help-banner h2 {
+    font-size: 24px;
+  }
+  .help-subtitle {
+    font-size: 15px;
+  }
+
+  /* ---- Final CTA ---- */
+  .final-cta {
+    padding: 56px 0;
+  }
+  .final-cta h2 {
+    font-size: 24px;
+  }
+  .final-cta > .container > p {
+    font-size: 15px;
+    margin-bottom: 28px;
+  }
+  .final-warning {
+    padding: 14px 18px;
+    font-size: 13px;
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+  }
+  .benefits-grid {
+    gap: 10px;
+    margin-bottom: 28px;
+  }
+  .benefit-item {
+    padding: 12px;
+    font-size: 13px;
+  }
+
+  /* ---- Photo Gallery ---- */
+  .photo-gallery {
+    padding: 40px 0;
+  }
+  .gallery-carousel-item img {
+    height: 200px;
+  }
+
+  /* ---- Footer ---- */
+  .main-footer {
+    padding: 44px 0 100px; /* bottom extra pra n\u00e3o cobrir com mobile bar */
+  }
+  .footer-cols {
+    gap: 28px;
+  }
+  .f-nav h4, .f-contact h4 {
+    font-size: 14px;
+  }
+  .f-copyright p {
+    font-size: 12px;
+  }
+
+  /* ---- Mobile Fixed Bar: DISCRETA ---- */
+  .mobile-fixed-bar {
+    padding: 8px 12px;
+    gap: 8px;
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.06);
+  }
+  .mfb-btn {
+    padding: 10px 8px;
+    font-size: 12px;
+    border-radius: 10px;
+    letter-spacing: 0.3px;
+    gap: 6px;
+  }
+  .mfb-btn-phone {
+    background: rgba(15, 23, 42, 0.92);
+  }
+  .mfb-btn-whatsapp {
+    box-shadow: 0 2px 8px rgba(37, 211, 102, 0.25);
+  }
+
+  /* ---- Back to top: menor, mais discreto ---- */
+  .back-to-top {
+    width: 38px;
+    height: 38px;
+    right: 12px;
+    bottom: 76px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  }
+
+  /* ---- Exit Popup ---- */
+  .exit-popup-overlay {
+    padding: 12px;
+  }
+  .exit-popup-container {
+    max-height: 96vh;
+  }
+  .exit-popup-content {
+    padding: 28px 20px 20px;
+  }
+  .exit-popup-title {
+    font-size: 22px;
+  }
+  .exit-popup-title span {
+    font-size: 17px;
+  }
+  .exit-popup-subtitle {
+    font-size: 14px;
+  }
+  .exit-popup-form input,
+  .exit-popup-form select {
+    padding: 13px 14px;
+    font-size: 16px; /* evita zoom iOS */
+  }
+}
+
+/* ---- Breakpoint extra small (iPhone SE) ---- */
+@media (max-width: 380px) {
+  .hero-content h1 {
+    font-size: 26px;
+  }
+  .section-title h2 {
+    font-size: 22px;
+  }
+  .stat-val {
+    font-size: 28px;
+  }
+  .mfb-btn span {
+    font-size: 11px;
+  }
+  .badge-trust, .badge-urgency {
+    font-size: 10px;
+    padding: 4px 8px;
+  }
+}
+
+/* ---- Melhoria geral de touch: evitar tap-highlight esquisito ---- */
+@media (hover: none) and (pointer: coarse) {
+  a, button {
+    -webkit-tap-highlight-color: rgba(227, 30, 36, 0.1);
+  }
+  .btn:active {
+    transform: scale(0.98);
+  }
+}

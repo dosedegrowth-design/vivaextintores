@@ -2,22 +2,36 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5" />
     <meta name="theme-color" content="#E31E24" />
+    <meta name="format-detection" content="telephone=yes" />
 
-    <!-- SEO Meta Tags -->
+    <!-- Primary SEO -->
     <title>Laudo AVCB e CLCB em SP | Projetos e Obras de Incêndio | Viva Extintores</title>
-    <meta name="description" content="★ Laudo AVCB/CLCB com aprovação garantida! Projetos técnicos e execução de obras de combate a incêndio em SP. Engenheiros CREA. Orçamento em até 2h úteis! ✓ +10 anos ✓ 1500+ projetos aprovados" />
-    <meta name="keywords" content="laudo AVCB SP, CLCB São Paulo, projeto combate incêndio, obra prevenção incêndio, ART bombeiros, engenharia incêndio SP, regularização bombeiros, vistoria AVCB, aprovação CLCB, PPCI SP, sistema hidráulico incêndio, instalação hidrante, sprinkler SP, porta corta-fogo" />
+    <meta name="description" content="Laudo AVCB/CLCB com aprovação garantida! Projetos técnicos e execução de obras de combate a incêndio em SP. Engenheiros CREA. Orçamento em até 2h úteis. +10 anos, 1500+ projetos aprovados." />
+    <meta name="keywords" content="laudo AVCB SP, CLCB São Paulo, projeto combate incêndio, obra prevenção incêndio, ART bombeiros, engenharia incêndio SP, regularização bombeiros, vistoria AVCB, aprovação CLCB, PPCI SP, sistema hidráulico incêndio, instalação hidrante, sprinkler SP, porta corta-fogo, extintores SP" />
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="bingbot" content="index, follow" />
     <meta name="author" content="Viva Extintores" />
+    <meta name="publisher" content="Viva Extintores" />
+    <meta name="rating" content="general" />
+    <meta name="distribution" content="global" />
+    <meta name="language" content="Portuguese" />
+    <meta http-equiv="content-language" content="pt-BR" />
     <link rel="canonical" href="https://vivaextintores.com.br/" />
+
+    <!-- Alternates -->
+    <link rel="alternate" hreflang="pt-BR" href="https://vivaextintores.com.br/" />
+    <link rel="alternate" hreflang="x-default" href="https://vivaextintores.com.br/" />
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="/logos/viva-logo.png" />
     <link rel="apple-touch-icon" href="/logos/viva-logo.png" />
+    <link rel="shortcut icon" href="/logos/viva-logo.png" />
 
-    <!-- Geo Tags -->
+    <!-- Geo Tags (São Paulo) -->
     <meta name="geo.region" content="BR-SP" />
     <meta name="geo.placename" content="São Paulo" />
     <meta name="geo.position" content="-23.5;-46.7" />
@@ -31,15 +45,21 @@
     <meta property="og:locale" content="pt_BR" />
     <meta property="og:site_name" content="Viva Extintores" />
     <meta property="og:image" content="https://vivaextintores.com.br/og-image.jpg" />
+    <meta property="og:image:secure_url" content="https://vivaextintores.com.br/og-image.jpg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:image:alt" content="Viva Extintores - Laudos AVCB e CLCB em São Paulo" />
+    <meta property="og:image:type" content="image/jpeg" />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Viva Extintores | Laudos AVCB e CLCB em SP" />
     <meta name="twitter:description" content="Laudos AVCB/CLCB com aprovação garantida. Engenheiros CREA. Orçamento em 2h úteis." />
     <meta name="twitter:image" content="https://vivaextintores.com.br/og-image.jpg" />
+    <meta name="twitter:image:alt" content="Viva Extintores" />
+
+    <!-- Google Site Verification (substituir pelo código real do Search Console) -->
+    <!-- <meta name="google-site-verification" content="SEU_CODIGO_AQUI" /> -->
 
     <!-- Google Analytics (GA4) - SUBSTITUIR G-XXXXXXXXXX pelo ID real -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
@@ -49,7 +69,8 @@
       gtag('js', new Date());
       gtag('config', 'G-XXXXXXXXXX', {
         'page_title': document.title,
-        'page_location': window.location.href
+        'page_location': window.location.href,
+        'anonymize_ip': true
       });
     </script>
 
@@ -64,24 +85,29 @@
       fbq('track', 'PageView');
     </script> -->
 
-    <!-- Preconnect -->
+    <!-- Preconnect & DNS prefetch -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="dns-prefetch" href="https://api.whatsapp.com" />
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Outfit:wght@400;600;800;900&display=swap" rel="stylesheet" />
 
-    <!-- Schema.org LocalBusiness + Professional Service -->
+    <!-- Schema.org: LocalBusiness + ProfessionalService -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "ProfessionalService",
-      "name": "Viva Extintores - Laudos AVCB e Projetos de Incêndio",
+      "@id": "https://vivaextintores.com.br/#business",
+      "name": "Viva Extintores",
+      "alternateName": "Viva Extintores Engenharia de Incêndio",
       "image": "https://vivaextintores.com.br/logos/viva-logo.png",
+      "logo": "https://vivaextintores.com.br/logos/viva-logo.png",
       "description": "Empresa especializada em laudos AVCB/CLCB, ART, projetos técnicos e execução de obras de combate a incêndio em São Paulo. Aprovação garantida com engenheiros CREA.",
       "url": "https://vivaextintores.com.br",
       "telephone": "+5511942925865",
       "email": "contato@vivaextintores.com.br",
+      "foundingDate": "2015",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Rua Marques de Recife, 53",
@@ -114,10 +140,14 @@
         { "@type": "State", "name": "Santa Catarina" }
       ],
       "priceRange": "$$",
+      "paymentAccepted": ["PIX", "Cartão de Crédito", "Boleto", "Transferência"],
+      "currenciesAccepted": "BRL",
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "4.9",
-        "reviewCount": "127"
+        "reviewCount": "127",
+        "bestRating": "5",
+        "worstRating": "1"
       },
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
@@ -127,8 +157,8 @@
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "Laudo AVCB - Auto de Vistoria do Corpo de Bombeiros",
-              "description": "Emissão de laudo técnico AVCB com aprovação garantida",
+              "name": "Laudo AVCB",
+              "description": "Emissão de Auto de Vistoria do Corpo de Bombeiros com aprovação garantida",
               "provider": { "@type": "ProfessionalService", "name": "Viva Extintores" }
             }
           },
@@ -136,8 +166,8 @@
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "Laudo CLCB - Certificado de Licença do Corpo de Bombeiros",
-              "description": "Certificado CLCB para regularização de imóveis",
+              "name": "Laudo CLCB",
+              "description": "Certificado de Licença do Corpo de Bombeiros para regularização inicial de imóveis",
               "provider": { "@type": "ProfessionalService", "name": "Viva Extintores" }
             }
           },
@@ -155,7 +185,7 @@
             "itemOffered": {
               "@type": "Service",
               "name": "Execução de Obras de Prevenção a Incêndio",
-              "description": "Instalação de sistemas de hidrantes, sprinklers, alarmes e adequações",
+              "description": "Instalação de sistemas de hidrantes, sprinklers, alarmes e adequações estruturais",
               "provider": { "@type": "ProfessionalService", "name": "Viva Extintores" }
             }
           },
@@ -163,7 +193,7 @@
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "ART - Anotação de Responsabilidade Técnica",
+              "name": "ART — Anotação de Responsabilidade Técnica",
               "description": "Emissão de ART por engenheiro CREA",
               "provider": { "@type": "ProfessionalService", "name": "Viva Extintores" }
             }
@@ -173,7 +203,84 @@
     }
     </script>
 
-    <!-- FAQ Schema -->
+    <!-- Schema.org: Organization -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "@id": "https://vivaextintores.com.br/#organization",
+      "name": "Viva Extintores",
+      "url": "https://vivaextintores.com.br",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://vivaextintores.com.br/logos/viva-logo.png",
+        "width": 200,
+        "height": 60
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+5511942925865",
+        "contactType": "customer service",
+        "areaServed": "BR",
+        "availableLanguage": "Portuguese"
+      },
+      "sameAs": [
+        "https://www.instagram.com/viva_extintores"
+      ]
+    }
+    </script>
+
+    <!-- Schema.org: WebSite -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "@id": "https://vivaextintores.com.br/#website",
+      "url": "https://vivaextintores.com.br",
+      "name": "Viva Extintores",
+      "description": "Laudos AVCB/CLCB, Projetos e Obras de Combate a Incêndio em SP",
+      "inLanguage": "pt-BR",
+      "publisher": {
+        "@id": "https://vivaextintores.com.br/#organization"
+      }
+    }
+    </script>
+
+    <!-- Schema.org: BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Início",
+          "item": "https://vivaextintores.com.br/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Laudos AVCB e CLCB",
+          "item": "https://vivaextintores.com.br/#laudos"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Projetos e Obras",
+          "item": "https://vivaextintores.com.br/#obras"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Equipamentos",
+          "item": "https://vivaextintores.com.br/#equipamentos"
+        }
+      ]
+    }
+    </script>
+
+    <!-- Schema.org: FAQ -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -200,7 +307,7 @@
           "name": "Quanto tempo demora para obter o laudo AVCB?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "O prazo varia de acordo com a complexidade do projeto, mas geralmente leva de 30 a 90 dias. A Viva Extintores oferece serviço ágil com aprovação garantida."
+            "text": "O prazo varia conforme a complexidade do projeto, mas geralmente leva de 30 a 90 dias. A Viva Extintores oferece serviço ágil com aprovação garantida em até 20 dias úteis para projetos padrão."
           }
         },
         {
@@ -225,6 +332,17 @@
   </head>
   <body>
     <div id="root"></div>
+
+    <!-- Fallback para JS desabilitado -->
+    <noscript>
+      <div style="padding: 40px; font-family: sans-serif; text-align: center;">
+        <h1>Viva Extintores — Laudos AVCB e CLCB em São Paulo</h1>
+        <p>Para visualizar este site, habilite o JavaScript no seu navegador.</p>
+        <p>Entre em contato: <a href="tel:+5511942925865">(11) 94292-5865</a> &nbsp;|&nbsp; <a href="mailto:contato@vivaextintores.com.br">contato@vivaextintores.com.br</a></p>
+        <p><strong>Endereço:</strong> Rua Marques de Recife, 53 — São Paulo/SP — 02925-010</p>
+      </div>
+    </noscript>
+
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
