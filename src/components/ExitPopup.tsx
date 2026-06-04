@@ -69,7 +69,7 @@ export default function ExitPopup() {
 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault()
-    const msg = `Olá! Vi a oferta do popup (15% OFF Laudo AVCB/CLCB) e quero aproveitar.
+    const msg = `Olá! Vim do site e vi a oferta do popup (15% OFF Laudo AVCB/CLCB) e quero aproveitar.
 
 *Nome:* ${nome}
 *Telefone:* ${telefone}

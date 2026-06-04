@@ -8,7 +8,7 @@ const laudos = [
     prazo: '10 a 20 dias úteis',
     price: 'Consulte',
     content: 'Auto de Vistoria do Corpo de Bombeiros — renovação obrigatória do CLCB. Documentação, projeto e acompanhamento de vistoria até a aprovação.',
-    whatsMsg: 'Ol%C3%A1!%20Quero%20solicitar%20or%C3%A7amento%20para%20Laudo%20AVCB.',
+    whatsMsg: 'Ol%C3%A1!%20Vim%20do%20site%20e%20quero%20solicitar%20or%C3%A7amento%20para%20Laudo%20AVCB.',
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ const laudos = [
     prazo: '5 a 15 dias úteis',
     price: 'Consulte',
     content: 'Certificado de Licença do Corpo de Bombeiros — primeira licença de imóveis. Emitido por engenheiro CREA com todas as ARTs necessárias.',
-    whatsMsg: 'Ol%C3%A1!%20Quero%20solicitar%20or%C3%A7amento%20para%20Laudo%20CLCB.',
+    whatsMsg: 'Ol%C3%A1!%20Vim%20do%20site%20e%20quero%20solicitar%20or%C3%A7amento%20para%20Laudo%20CLCB.',
   },
   {
     id: 3,
@@ -26,7 +26,7 @@ const laudos = [
     prazo: '3 a 7 dias úteis',
     price: 'A partir de R$ 350',
     content: 'Anotação/Registro de Responsabilidade Técnica emitida por engenheiro CREA ou arquiteto CAU — obrigatória para projetos e execução.',
-    whatsMsg: 'Ol%C3%A1!%20Preciso%20de%20uma%20ART%2FRRT%20para%20projeto%20de%20inc%C3%AAndio.',
+    whatsMsg: 'Ol%C3%A1!%20Vim%20do%20site%20e%20preciso%20de%20uma%20ART%2FRRT%20para%20projeto%20de%20inc%C3%AAndio.',
   },
   {
     id: 4,
@@ -35,7 +35,7 @@ const laudos = [
     prazo: '7 a 21 dias úteis',
     price: 'Consulte',
     content: 'Avaliação completa de segurança, estabilidade e integridade da edificação. Identificamos anomalias e apontamos adequações necessárias.',
-    whatsMsg: 'Ol%C3%A1!%20Quero%20um%20laudo%20t%C3%A9cnico%20estrutural.',
+    whatsMsg: 'Ol%C3%A1!%20Vim%20do%20site%20e%20quero%20um%20laudo%20t%C3%A9cnico%20estrutural.',
   },
 ]
 
