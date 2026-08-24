@@ -1,3 +1,4 @@
+import { openWhatsApp } from './TeamChooser'
 import { useState, type FormEvent } from 'react'
 import { MessageCircle, Shield } from 'lucide-react'
 
@@ -39,8 +40,6 @@ export default function HeroForm() {
 
 Aguardo o contato!`
 
-    const url = `https://api.whatsapp.com/send/?phone=5511942925865&text=${encodeURIComponent(msg)}`
-
     if (typeof window !== 'undefined' && (window as unknown as { gtag?: (...args: unknown[]) => void }).gtag) {
       (window as unknown as { gtag: (...args: unknown[]) => void }).gtag('event', 'hero_form_submit', {
         service: servicoLabel,
@@ -48,7 +47,7 @@ Aguardo o contato!`
       })
     }
 
-    window.open(url, '_blank')
+    openWhatsApp(msg)
   }
 
   return (

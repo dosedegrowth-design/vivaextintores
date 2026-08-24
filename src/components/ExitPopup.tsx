@@ -1,3 +1,4 @@
+import { openWhatsApp } from './TeamChooser'
 import { useState, useEffect, type FormEvent } from 'react'
 import { X, Phone, Shield, Clock } from 'lucide-react'
 
@@ -77,15 +78,13 @@ export default function ExitPopup() {
 
 Aguardo retorno urgente!`
 
-    const url = `https://api.whatsapp.com/send/?phone=5511942925865&text=${encodeURIComponent(msg)}`
-
     if (typeof window !== 'undefined' && (window as unknown as { gtag?: (...args: unknown[]) => void }).gtag) {
       (window as unknown as { gtag: (...args: unknown[]) => void }).gtag('event', 'exit_popup_conversion', {
         service: servico || 'não informado',
       })
     }
 
-    window.open(url, '_blank')
+    openWhatsApp(msg)
     setIsVisible(false)
   }
 

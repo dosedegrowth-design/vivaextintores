@@ -17,6 +17,7 @@ import ExitPopup from './components/ExitPopup'
 import MobileFixedBar from './components/MobileFixedBar'
 import BackToTop from './components/BackToTop'
 import WhatsAppFloat from './components/WhatsAppFloat'
+import TeamChooser from './components/TeamChooser'
 
 function App() {
   return (
@@ -45,6 +46,7 @@ function App() {
       <BackToTop />
       <MobileFixedBar />
       <ExitPopup />
+      <TeamChooser />
     </div>
   )
 }
