@@ -2170,3 +2170,313 @@ h4 { font-size: 16px; }
   height: 100%;
   display: block;
 }
+
+/* ============================================================
+   PÁGINA DE PORTFÓLIO
+   ============================================================ */
+.portfolio-page { display: block; }
+
+/* ── Hero ── */
+.pf-hero {
+  background: linear-gradient(135deg, var(--dark-bg), var(--dark-surface));
+  color: var(--dark-text);
+  padding: 48px 0 44px;
+  text-align: center;
+}
+
+.pf-eyebrow {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--secondary);
+  margin: 0 0 10px;
+}
+
+.pf-hero h1 {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 1.15;
+  margin: 0 0 14px;
+  text-wrap: balance;
+}
+
+.pf-hero h1 span { color: var(--primary); }
+
+.pf-lead {
+  color: var(--dark-muted);
+  font-size: 15px;
+  max-width: 60ch;
+  margin: 0 auto 28px;
+  line-height: 1.6;
+}
+
+.pf-stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.pf-stat {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 14px;
+  padding: 14px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.pf-stat svg { color: var(--primary); margin-bottom: 4px; }
+.pf-stat strong { font-family: 'Outfit', sans-serif; font-size: 19px; font-weight: 800; }
+.pf-stat span { font-size: 11.5px; color: var(--dark-muted); text-align: center; line-height: 1.35; }
+
+/* ── Filtros ── */
+.pf-galeria { padding: 36px 0 48px; background: #f8fafc; }
+
+.pf-filtros {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 26px;
+}
+
+.pf-filtro {
+  border: 1.5px solid var(--line, #e5e7eb);
+  background: #fff;
+  color: var(--text-muted);
+  font-family: inherit;
+  font-size: 13.5px;
+  font-weight: 600;
+  padding: 9px 16px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.14s ease;
+}
+
+.pf-filtro:hover { border-color: var(--primary); color: var(--primary); }
+
+.pf-filtro.ativo {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #fff;
+}
+
+/* ── Grid ── */
+.pf-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+}
+
+.pf-card {
+  border: 0;
+  padding: 0;
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  text-align: left;
+  font-family: inherit;
+  box-shadow: 0 4px 16px -6px rgba(15, 23, 42, 0.14);
+  transition: transform 0.16s ease, box-shadow 0.16s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.pf-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 32px -10px rgba(15, 23, 42, 0.26);
+}
+
+.pf-card-img {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background: #e2e8f0;
+}
+
+.pf-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.pf-card:hover .pf-card-img img { transform: scale(1.05); }
+
+.pf-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: rgba(227, 30, 36, 0.94);
+  color: #fff;
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 4px 9px;
+  border-radius: 999px;
+}
+
+.pf-card-txt { padding: 14px 16px 16px; }
+.pf-card-txt h3 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text);
+  margin: 0 0 4px;
+}
+.pf-card-txt p { font-size: 13.5px; color: var(--text-light); margin: 0; line-height: 1.5; }
+
+/* ── Clientes ── */
+.pf-clientes { padding: 40px 0; background: #fff; }
+.pf-clientes-titulo {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-light);
+  margin: 0 0 22px;
+}
+.pf-logos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 22px 34px;
+}
+.pf-logos img {
+  height: 30px;
+  width: auto;
+  object-fit: contain;
+  filter: grayscale(1);
+  opacity: 0.6;
+  transition: filter 0.2s ease, opacity 0.2s ease;
+}
+.pf-logos img:hover { filter: none; opacity: 1; }
+
+/* ── CTA ── */
+.pf-cta {
+  background: linear-gradient(135deg, var(--dark-bg), var(--dark-surface));
+  color: var(--dark-text);
+  text-align: center;
+  padding: 44px 0;
+}
+.pf-cta h2 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  margin: 0 0 8px;
+}
+.pf-cta p { color: var(--dark-muted); margin: 0 0 20px; font-size: 15px; }
+
+/* ── Lightbox ── */
+.pf-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 10001;
+  background: rgba(8, 12, 22, 0.93);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  animation: teamFadeIn 0.18s ease;
+}
+
+.pf-lb-fig {
+  margin: 0;
+  max-width: 900px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.pf-lb-fig img {
+  max-width: 100%;
+  max-height: 62vh;
+  width: auto;
+  border-radius: 12px;
+  box-shadow: 0 20px 50px -12px rgba(0, 0, 0, 0.7);
+}
+
+.pf-lb-fig figcaption { text-align: center; color: #fff; max-width: 60ch; }
+.pf-lb-fig figcaption h3 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 19px;
+  font-weight: 700;
+  margin: 10px 0 5px;
+}
+.pf-lb-fig figcaption p { color: #cbd5e1; font-size: 14px; margin: 0 0 8px; line-height: 1.55; }
+.pf-lb-fig figcaption small { color: #94a3b8; font-size: 12px; }
+
+.pf-lb-fechar,
+.pf-lb-nav {
+  position: absolute;
+  border: 0;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.13);
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.14s ease;
+}
+.pf-lb-fechar:hover,
+.pf-lb-nav:hover { background: rgba(255, 255, 255, 0.28); }
+
+.pf-lb-fechar { top: 18px; right: 18px; width: 42px; height: 42px; }
+.pf-lb-nav { top: 50%; transform: translateY(-50%); width: 46px; height: 46px; }
+.pf-lb-prev { left: 12px; }
+.pf-lb-next { right: 12px; }
+
+/* ── Tablet ── */
+@media (min-width: 640px) {
+  .pf-hero { padding: 64px 0 58px; }
+  .pf-hero h1 { font-size: 38px; }
+  .pf-lead { font-size: 16.5px; }
+  .pf-stats { grid-template-columns: repeat(4, 1fr); }
+  .pf-stat strong { font-size: 21px; }
+  .pf-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+  .pf-cta h2 { font-size: 29px; }
+  .pf-logos img { height: 36px; }
+}
+
+/* ── Desktop ── */
+@media (min-width: 992px) {
+  .pf-hero { padding: 76px 0 66px; }
+  .pf-hero h1 { font-size: 46px; }
+  .pf-galeria { padding: 46px 0 64px; }
+  .pf-grid { grid-template-columns: repeat(3, 1fr); gap: 24px; }
+  .pf-cta { padding: 60px 0; }
+}
+
+/* Cor explicita: as regras globais de h1/h2 sobrescrevem a cor herdada
+   das secoes escuras do portfolio */
+.pf-hero h1 { color: var(--dark-text); }
+.pf-cta h2 { color: var(--dark-text); }
+
+/* Menu desktop: com o item "Portfólio" o gap de 28px estourava a linha.
+   Aperta entre 992-1199px e volta ao normal em telas largas. */
+@media (min-width: 992px) {
+  .desktop-nav { gap: 18px; }
+  .desktop-nav > a { white-space: nowrap; }
+  .desktop-nav > a:not(.btn):not(.header-phone) { font-size: 14px; }
+  .header-phone { padding: 9px 13px; font-size: 13.5px; }
+}
+
+@media (min-width: 1200px) {
+  .desktop-nav { gap: 26px; }
+  .desktop-nav > a:not(.btn):not(.header-phone) { font-size: 15px; }
+  .header-phone { padding: 9px 16px; font-size: 14px; }
+}

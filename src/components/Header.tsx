@@ -21,15 +21,16 @@ export default function Header() {
   return (
     <header className={`main-header ${scrolled ? 'scrolled' : ''}`}>
       <div className="container">
-        <a href="#" className="logo" aria-label="Viva Extintores">
+        <a href="/" className="logo" aria-label="Viva Extintores">
           <img src="/logos/viva-logo.png" alt="Viva Extintores" />
         </a>
 
         <nav className="desktop-nav">
-          <a href="#laudos">Laudos AVCB/CLCB</a>
-          <a href="#obras">Projetos & Obras</a>
-          <a href="#equipamentos">Equipamentos</a>
-          <a href="#depoimentos">Depoimentos</a>
+          <a href="/#laudos">Laudos AVCB/CLCB</a>
+          <a href="/#obras">Projetos & Obras</a>
+          <a href="/#equipamentos">Equipamentos</a>
+          <a href="/#depoimentos">Depoimentos</a>
+          <a href="/portfolio">Portfólio</a>
           <a href="tel:+5511942925865" className="header-phone">
             <Phone size={16} />
             <span>(11) 94292-5865</span>
@@ -45,10 +46,11 @@ export default function Header() {
       </div>
 
       <nav className={`mobile-nav ${mobileOpen ? 'open' : ''}`}>
-        <a href="#laudos" onClick={closeMobile}>Laudos AVCB/CLCB</a>
-        <a href="#obras" onClick={closeMobile}>Projetos & Obras</a>
-        <a href="#equipamentos" onClick={closeMobile}>Equipamentos</a>
-        <a href="#depoimentos" onClick={closeMobile}>Depoimentos</a>
+        <a href="/#laudos" onClick={closeMobile}>Laudos AVCB/CLCB</a>
+        <a href="/#obras" onClick={closeMobile}>Projetos & Obras</a>
+        <a href="/#equipamentos" onClick={closeMobile}>Equipamentos</a>
+        <a href="/#depoimentos" onClick={closeMobile}>Depoimentos</a>
+        <a href="/portfolio" onClick={closeMobile}>Portfólio</a>
         <a href="tel:+5511942925865" className="mobile-phone-link" onClick={closeMobile}>
           <Phone size={18} /> (11) 94292-5865
         </a>
