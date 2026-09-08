@@ -156,7 +156,7 @@ export default function Portfolio() {
               <button key={it.slug} className="pf-card" onClick={() => setAberta(idx)}>
                 <div className="pf-card-img">
                   <img
-                    src={`/portfolio/${it.slug}-thumb.webp`}
+                    src={`/acervo/${it.slug}-thumb.webp`}
                     alt={it.title}
                     loading="lazy"
                     width={700}
@@ -203,7 +203,7 @@ export default function Portfolio() {
           <button className="pf-lb-fechar" onClick={fechar} aria-label="Fechar"><X size={22} /></button>
           <button className="pf-lb-nav pf-lb-prev" onClick={() => navegar(-1)} aria-label="Anterior"><ChevronLeft size={26} /></button>
           <figure className="pf-lb-fig">
-            <img src={`/portfolio/${item.slug}.webp`} alt={item.title} />
+            <img src={`/acervo/${item.slug}.webp`} alt={item.title} />
             <figcaption>
               <span className="pf-badge">{CAT_LABEL[item.cat]}</span>
               <h3>{item.title}</h3>
