@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback } from 'react'
 import { X, ChevronLeft, ChevronRight, ShieldCheck, Flame, Wrench, Users } from 'lucide-react'
+import Parceiros from '../components/Parceiros'
 
 type Cat = 'laudos' | 'obras' | 'brigada' | 'viva'
 
@@ -57,9 +58,6 @@ const CLIENTES = [
   'habibsnew', 'riachuelonew', 'sephoranew', 'walmartnew', 'tokiomarinenew',
   'drogariaspnew', 'acaoesaudenew', 'watersidenew', 'caoanew',
 ]
-
-const WHATS = 'https://api.whatsapp.com/send/?phone=5511942925865&text=' +
-  encodeURIComponent('Olá! Vim do site, vi o portfólio de vocês e gostaria de solicitar um orçamento.')
 
 const TITULO = 'Portfólio de Obras e Laudos AVCB | Viva Extintores'
 const DESCRICAO =
@@ -186,16 +184,8 @@ export default function Portfolio() {
         </div>
       </section>
 
-      {/* ── CTA ────────────────────────────────── */}
-      <section className="pf-cta">
-        <div className="container">
-          <h2>Seu imóvel pode ser o próximo</h2>
-          <p>Fale com um engenheiro CREA e receba um orçamento em até 2h úteis.</p>
-          <a href={WHATS} className="btn btn-green" target="_blank" rel="noopener noreferrer">
-            Solicitar orçamento grátis
-          </a>
-        </div>
-      </section>
+      {/* ── Parceiros (fecha a pagina) ─────────── */}
+      <Parceiros />
 
       {/* ── Lightbox ───────────────────────────── */}
       {item && (

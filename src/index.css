@@ -2480,3 +2480,184 @@ h4 { font-size: 16px; }
   .desktop-nav > a:not(.btn):not(.header-phone) { font-size: 15px; }
   .header-phone { padding: 9px 16px; font-size: 14px; }
 }
+
+/* ============================================================
+   PORTFÓLIO — BLOCO DE PARCEIROS
+   ============================================================ */
+.pf-parceiros {
+  background: linear-gradient(135deg, var(--dark-bg), var(--dark-surface));
+  color: var(--dark-text);
+  padding: 48px 0 44px;
+}
+
+.pfp-topo { text-align: center; max-width: 62ch; margin: 0 auto 30px; }
+.pf-parceiros h2 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 26px;
+  font-weight: 800;
+  color: var(--dark-text);
+  margin: 0 0 10px;
+  text-wrap: balance;
+}
+.pf-parceiros h2 span { color: var(--primary); }
+.pfp-lead { color: var(--dark-muted); font-size: 15px; line-height: 1.6; margin: 0; }
+
+/* vantagens */
+.pfp-vantagens {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+  margin-bottom: 34px;
+}
+.pfp-vantagem {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 16px;
+  padding: 20px 18px;
+}
+.pfp-vic {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: rgba(227, 30, 36, 0.16);
+  color: var(--primary);
+  margin-bottom: 12px;
+}
+.pfp-vantagem h3 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 16.5px;
+  font-weight: 700;
+  color: var(--dark-text);
+  margin: 0 0 5px;
+}
+.pfp-vantagem p { color: var(--dark-muted); font-size: 13.5px; line-height: 1.55; margin: 0; }
+
+/* corpo: perfis + form */
+.pfp-corpo { display: grid; grid-template-columns: 1fr; gap: 26px; align-items: start; }
+
+.pfp-sub {
+  font-family: 'Outfit', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--secondary);
+  margin: 0 0 16px;
+}
+
+.pfp-perfil { display: flex; gap: 13px; align-items: flex-start; margin-bottom: 18px; }
+.pfp-pic {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--primary);
+}
+.pfp-perfil strong {
+  display: block;
+  font-family: 'Outfit', sans-serif;
+  font-size: 15.5px;
+  font-weight: 700;
+  color: var(--dark-text);
+  margin-bottom: 3px;
+}
+.pfp-perfil p { color: var(--dark-muted); font-size: 13px; line-height: 1.5; margin: 0; }
+
+/* card do formulario */
+.pfp-form-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 24px 20px 20px;
+  box-shadow: 0 20px 50px -18px rgba(0, 0, 0, 0.6);
+}
+.pfp-form-head { margin-bottom: 16px; }
+.pfp-form-head h3 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--text);
+  margin: 0 0 4px;
+}
+.pfp-form-head p { color: var(--text-light); font-size: 13.5px; margin: 0; line-height: 1.5; }
+
+.pfp-form { display: grid; grid-template-columns: 1fr; gap: 12px; }
+.pfp-form .form-group { display: flex; flex-direction: column; gap: 5px; }
+.pfp-form label { font-size: 13px; font-weight: 600; color: var(--text-muted); }
+.pfp-form input,
+.pfp-form select,
+.pfp-form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: 16px; /* 16px evita zoom automatico no iOS */
+  color: var(--text);
+  background: #fff;
+  border: 1.5px solid var(--line, #e5e7eb);
+  border-radius: 10px;
+  padding: 11px 13px;
+  transition: border-color 0.15s ease;
+}
+.pfp-form textarea { resize: vertical; line-height: 1.5; }
+.pfp-form input:focus,
+.pfp-form select:focus,
+.pfp-form textarea:focus {
+  outline: none;
+  border-color: var(--cta-green);
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.14);
+}
+
+.pfp-enviar {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  margin-top: 2px;
+}
+
+.pfp-nota {
+  font-size: 12px;
+  color: var(--text-light);
+  text-align: center;
+  line-height: 1.5;
+  margin: 4px 0 0;
+}
+
+.pfp-rodape {
+  text-align: center;
+  color: var(--dark-muted);
+  font-size: 13.5px;
+  margin: 30px 0 0;
+}
+.pfp-rodape a {
+  color: var(--dark-text);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.pfp-rodape a:hover { color: var(--primary); }
+
+@media (min-width: 640px) {
+  .pf-parceiros { padding: 64px 0 56px; }
+  .pf-parceiros h2 { font-size: 32px; }
+  .pfp-lead { font-size: 16.5px; }
+  .pfp-vantagens { grid-template-columns: repeat(3, 1fr); gap: 18px; }
+  .pfp-form { grid-template-columns: 1fr 1fr; }
+  .pfp-form .pfp-full,
+  .pfp-form .pfp-enviar,
+  .pfp-form .pfp-nota { grid-column: 1 / -1; }
+  .pfp-form-card { padding: 28px 26px 24px; }
+}
+
+@media (min-width: 992px) {
+  .pf-parceiros { padding: 76px 0 64px; }
+  .pf-parceiros h2 { font-size: 38px; }
+  .pfp-corpo { grid-template-columns: 1fr 1.05fr; gap: 44px; }
+}
