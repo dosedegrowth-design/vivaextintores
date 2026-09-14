@@ -5,7 +5,7 @@
 // Rodando local (as fotos já estão na pasta), o script não faz nada.
 
 import { execFileSync } from "node:child_process";
-import { existsSync, mkdtempSync, readdirSync, renameSync, rmSync } from "node:fs";
+import { existsSync, mkdirSync, mkdtempSync, readdirSync, renameSync, rmSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -13,6 +13,8 @@ import { fileURLToPath } from "node:url";
 const raiz = dirname(dirname(fileURLToPath(import.meta.url)));
 const publico = join(raiz, "public");
 const destinos = ["photos", "brand"];
+
+mkdirSync(publico, { recursive: true });
 
 const faltando = destinos.filter((pasta) => {
   const alvo = join(publico, pasta);
