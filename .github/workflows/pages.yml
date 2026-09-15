@@ -5,6 +5,10 @@
 # O Pages dá um hostname limpo, HTTPS, sem login — e sem tocar no site que
 # está no ar em vivaextintores.com.br (branch main, Vercel).
 #
+# Modo "branch": o build gera out/ e o resultado é empurrado para gh-pages.
+# (Criar o site do Pages pela API exige admin, que o GITHUB_TOKEN não tem;
+# publicar numa branch, não.)
+#
 # Fonte: branch novo-site. Cada push publica de novo.
 name: Site provisório (GitHub Pages)
 
@@ -14,16 +18,14 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+  contents: write
 
 concurrency:
   group: pages
   cancel-in-progress: true
 
 jobs:
-  build:
+  publicar:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -32,31 +34,24 @@ jobs:
         with:
           node-version: 22
 
-      # cria o site do Pages se ainda não existir e devolve o base_path
-      - id: pages
-        uses: actions/configure-pages@v5
-        with:
-          enablement: true
-
       - run: npm install --no-audit --no-fund
 
       # prebuild baixa as fotos do repositório do painel e trata todas
       - run: npm run build
         env:
           VIVA_EXPORT: "1"
-          VIVA_BASE_PATH: ${{ steps.pages.outputs.base_path }}
-          NEXT_PUBLIC_BASE_PATH: ${{ steps.pages.outputs.base_path }}
+          VIVA_BASE_PATH: /vivaextintores
+          NEXT_PUBLIC_BASE_PATH: /vivaextintores
 
-      - uses: actions/upload-pages-artifact@v3
+      # Jekyll ignoraria _next/; as fotos originais não são servidas
+      - run: |
+          touch out/.nojekyll
+          rm -rf out/photos
+
+      - uses: peaceiris/actions-gh-pages@v4
         with:
-          path: out
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - id: deployment
-        uses: actions/deploy-pages@v4
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./out
+          publish_branch: gh-pages
+          force_orphan: true
+          commit_message: "site provisório: ${{ github.sha }}"
