@@ -1,0 +1,3 @@
+:HL["/vivaextintores/_next/static/chunks/115p46~xqre~k.css","style"]
+:HC["/",""]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"portfolio","param":null,"prefetchHints":0,"slots":{"children":{"name":"laudos-clcb-avcb","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"PtqMsOgsCdCVFrpQf42MJ"}
