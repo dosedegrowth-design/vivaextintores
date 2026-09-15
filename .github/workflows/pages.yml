@@ -1,0 +1,15 @@
+# Publica o site provisório no GitHub Pages.
+# Disparo manual por enquanto — só para confirmar que o token tem permissão
+# de gravar workflow. O pipeline completo entra no próximo commit.
+name: Site provisório
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+jobs:
+  noop:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo ok
